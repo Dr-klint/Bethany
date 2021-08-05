@@ -1,0 +1,566 @@
+:root{
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed:0.75s
+ }
+
+ 
+ /*BASIC SETUP*/
+*{
+
+    padding: 0%;     
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato' 'arial' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+} 
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 100vh;
+    visibility: hidden;
+}
+
+
+section{
+
+    padding: 80px 0px;
+
+}
+
+/*HEADER*/
+header {
+
+     
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images-20210802T205231Z-001/images/products/cheesecake.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed ;
+    
+
+
+}
+
+.list{
+    position: absolute;
+    top:8%;
+    right:5%;
+    list-style: none;
+    
+}
+
+.list li{
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.list li a:link,
+.list li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(112, 205, 221);
+    transition: color 0.5s ease;
+}
+
+.list li a:active,
+.list li a:hover{
+    color: rgb(187, 150, 150);
+}
+
+.img{
+    position:absolute;
+    top: 3%;
+    left: 3%;
+    width:100px;
+    opacity:0.6;
+}
+
+.showcase{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-50%);
+}
+
+/*HEADING*/
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 250%;
+    color: rgb(112, 205, 221);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+h2:after{
+
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(112, 205, 221);
+    content: "";
+    margin: 30px auto 0px auto;
+    
+}
+
+/*SECTION-US*/
+.US{
+  background-color: #f4f4f4;
+  position: relative;
+  
+}
+
+.US p{
+    font-weight: 300;
+    font-size: 90%;
+    line-height: 145%;
+    margin-top: -80px;
+    padding: 13%;
+    font-style: italic;
+    width: 70%;
+}
+
+.US p:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+   
+}
+
+.image{
+    width: 100px;
+    border-radius: 80%;
+    position: absolute;
+    bottom:18%;
+    left: 12%;
+
+}
+
+/* SECTION PIES */
+.pies{
+    background-color: black;
+    padding: 0px;
+    
+}
+
+.pie1,
+.pie2,
+.pie3,
+.pie4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.pie1 img,
+.pie2 img,
+.pie3 img,
+.pie4 img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+    height: 100vh;
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+
+.text-box{
+    width: 600px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 10s linear infinite;
+    transform: translateY(100px);
+}
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text-box h1{
+    margin-bottom: 20px;
+
+}
+.text-box p{
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 60px;
+}
+.text-box span{
+    background: black;
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.text-box1{
+    animation-delay:0s ;
+}
+.text-box2{
+    animation-delay:2.5s ;
+}
+
+.text-box3{
+    animation-delay:5s ;
+}
+
+.text-box4{
+    animation-delay:7.5s ;
+}
+
+
+.pie1{
+    animation: applepie 10s linear infinite;
+}
+.pie2{
+    animation: blueberrycheesecakesmall 10s linear infinite;
+}
+.pie3{
+    animation: rhubarbpiesmall 10s linear infinite;
+}
+
+.pie4{
+    animation: pumpkinpiesmall 10s linear infinite;
+}
+
+
+@keyframes applepie{
+    0%{
+    visibility: visible;
+    }
+    12.5%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    37.5%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    62.5%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    87.5%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+        }
+}
+
+
+@keyframes blueberrycheesecakesmall{
+    0%{
+    visibility: hidden;
+    }
+    12.5%{
+        visibility: hidden;
+    }
+    25%{
+        visibility:visible;
+    }
+    37.5%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    62.5%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    87.5%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+        }
+}
+@keyframes rhubarbpiesmall{
+    0%{
+    visibility: hidden;
+    }
+    12.5%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    37.5%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    62.5%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    87.5%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+        }
+}
+@keyframes pumpkinpiesmall{
+    0%{
+    visibility: hidden;
+    }
+    12.5%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    37.5%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    62.5%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    87.5%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+        }
+}
+
+
+/*SECTION FORM*/
+
+.section-form{
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+label{
+    width: 60%;
+    margin-left: 20%;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone-number],
+select,
+textarea{
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+input[type=submit] {
+
+    
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    border-radius: 200px;
+   
+   }
+
+input[type=submit]  {
+
+    background-color: rgb(112, 205, 221);
+    border: 1px solid rgb(112, 205, 221);
+    color: #fff;
+    margin-right: 15px;
+}
+
+input[type=submit]:hover,
+input[type=submit] :active {
+    cursor: pointer;
+    background-color: rgb(132, 230, 243);
+    transition: background-color 0.2s, border 0.2s, font 0.2s;
+}
+
+input[type=submit]:hover,
+input[type=submit] :active  {
+
+    border: 1px solid #fff;
+    
+}
+
+*:focus{
+    outline: none;
+}
+/*FOOTER*/
+
+footer{
+    background-color: #333;
+    padding: 50px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li{
+    display: block;
+    font-size: 60%;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color:#888;
+}
+.footer-nav li:first-of-type{
+    font-size: 70%;
+    margin-bottom: 20px;
+}
+
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 70%;
+}
+
+footer p{
+    color:#888;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60%;
+}
+
+.end li{
+    list-style: none;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 70%;
+    margin-bottom: 30px;
+    position: flex;
+    margin-left: 17%;
+    margin-top: 10px;
+
+} 
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin-right: 0px;
+}
+
+.end li a:link,
+.end li a:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: #888;
+    text-transform: uppercase;
+    border: 0;
+    transition: color 0.2s ease;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+   transition: color 0.3s ease;
+}
+
+.ion-social-facebook:hover{
+    color: #eb5998;
+}
+
+.ion-social-twitter:hover{
+    color:#00aced
+}
+
+.ion-social-googleplus:hover{
+    color:#dd4b39
+}
+
+.ion-social-instagram:hover{
+    color:#517fa4
+}
+
+.end li a:hover,
+.end li a:active,
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+
+}
+
+

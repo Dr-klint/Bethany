@@ -37,9 +37,6 @@
    h1{
        font-size: 220%;
    }
-   .text-box h1{
-       font-size: 200%;
-   }
    h2{
        font-size: 160%;
    }
@@ -105,9 +102,6 @@
    h1{
        font-size: 200%;
    }
-   .text-box h1{
-       font-size: 180;
-   }
    .text-box{
     left:30px;
     font-size: 12px;
@@ -117,18 +111,6 @@
 
 /*small phones: from 0 to 480px*/
 @media only screen and(max-width: 480px) {
-    body{
-        width: 100%;
-        overflow-x: hidden;
-        font-size: 14px;
-    }   
-    h1{
-        font-size: 180%;
-        overflow: hidden;
-    }
-    .text-box h1{
-        font-size: 150%;
-    }
     section{
         padding: 25% 0;
     }
@@ -139,17 +121,4 @@
         left:20px;
         font-size: 10px;
        }
-   
-    .img{
-        width: 70px;
-    }
-    .US p{
-        width: 80%;
-    }
-    label{
-        margin-bottom: 10px;
-    }
-   footer{
-        padding: 20px;
-   }
 }

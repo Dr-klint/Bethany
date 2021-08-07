@@ -15,7 +15,8 @@
 }
 
 
-html {
+html,
+body {
 
     background-color: #fff;
     color: #555;
@@ -24,6 +25,7 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    width: 100%;
 } 
 
 .clearfix {zoom: 1}
@@ -51,6 +53,8 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed ;
+    width: 100%;
+    overflow-x: hidden;
     
 
 
@@ -136,6 +140,8 @@ h2:after{
 .US{
   background-color: #f4f4f4;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
   
 }
 
@@ -147,6 +153,7 @@ h2:after{
     padding: 13%;
     font-style: italic;
     width: 70%;
+    margin-left: 5%;
 }
 
 .US p:before{
@@ -154,17 +161,17 @@ h2:after{
     font-size: 400%;
     display: block;
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 25%;
    
 }
 
 .image{
-    width: 100px;
+    width: 90px;
     border-radius: 80%;
     position: absolute;
-    bottom:18%;
-    left: 12%;
+    bottom: 20%;
+    left: 18%;
 
 }
 
@@ -172,6 +179,8 @@ h2:after{
 .pies{
     background-color: black;
     padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
     
 }
 
@@ -396,8 +405,9 @@ h2:after{
 /*SECTION FORM*/
 
 .section-form{
-    overflow: hidden;
     background-color: #f4f4f4;
+    width: 100%;
+    overflow-x: hidden;
 }
 label{
     width: 60%;
@@ -460,6 +470,8 @@ input[type=submit] :active  {
 footer{
     background-color: #333;
     padding: 50px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .footer-nav{

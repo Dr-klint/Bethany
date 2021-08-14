@@ -106,7 +106,7 @@ header {
     width: 100%;
     background-color: #fff;
     height: 8vh;
-    z-index: 999;
+    z-index: 998;
     box-shadow: 0 2px 2px #efefef;
 }
 

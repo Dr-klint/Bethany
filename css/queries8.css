@@ -26,6 +26,9 @@
         width: 100%;
         overflow-x: hidden;
     }
+    .sticky{
+        display: none;
+    }
     .menu-wrap{
         opacity: 1;
     }
@@ -162,5 +165,4 @@ textarea{
         width: 97%;
         margin-top: -20px;
     }
-    
 }

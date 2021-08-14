@@ -26,6 +26,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     width: 100%;
+    scroll-behavior: smooth;
 } 
 
 .clearfix {zoom: 1}
@@ -60,6 +61,8 @@ header {
 
 }
 
+/*navigations*/
+
 .list{
     position: absolute;
     top:8%;
@@ -92,6 +95,42 @@ header {
     left: 3%;
     width:100px;
     opacity:0.6;
+}
+
+/* sticky navigations*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 8vh;
+    z-index: 999;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .list li{
+    margin-top: 13px;
+}
+
+
+.sticky .list li a:link,
+.sticky .list li a:visited{
+    padding: 11px 0px;
+    color: rgb(112, 205, 221);
+    transition: color 0.5s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.sticky .list li a:active,
+.sticky .list li a:hover{
+    color: rgb(187, 150, 150);
+    border-bottom: 2px solid rgb(187, 150, 150);
+}
+
+.sticky .img{
+    width:53px;
 }
 
 .showcase{

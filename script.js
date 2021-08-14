@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-      <script type="text/javascript">
+     
     
         $(window).on("scroll",function(){
             if ($(window).scrollTop()){
@@ -10,8 +10,7 @@ $(document).ready(function() {
                 $('nav').removeClass('sticky');
             }
         })
-    </script>
-
+    
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')

@@ -16,6 +16,11 @@
    .text-box{
        padding: 0, 1%;
    }
+    
+    .image{
+        left: 18%;
+        bottom: 15%;
+    }
 }
 
 /*small tablet to big tablet: from 768px to 1023px*/
@@ -46,8 +51,8 @@
        margin-top: -60px;
    }
    .image{
-       left: 12%;
-       bottom:8%;
+       left: 17%;
+       bottom:9%;
    }
    h1{
        font-size: 220%;
@@ -90,8 +95,8 @@
         margin-top: -40px;
     }
     .image{
-    left: 15%;
-    bottom: 2%;
+    left: 1%;
+    bottom: 5%;
     width: 60px;
     }
     h2{

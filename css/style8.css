@@ -510,23 +510,6 @@ input[type=submit] :active  {
     outline: none;
 }
 
-.form-messages{
-    width: 30%;
-    margin: 0px auto;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 30px;
-    color: #333
-}
-.success{
-    background-color: #26bf44;
-    opacity: 0.8;
-}
-
-.error{
-    background-color: #ff3024;
-    opacity: 0.9;
-}
 /*FOOTER*/
 
 footer{
